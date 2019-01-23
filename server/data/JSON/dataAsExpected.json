@@ -1,0 +1,29 @@
+
+{
+    "joueur": {
+        "name": "u",
+        "hp": null,
+        "strength": "bj",
+        "agility": "bj",
+        "intelligence": "bj",
+        "direction": "",
+        "posX": 0,
+        "posY": 0,
+        "inventaire": [{
+            "nom": "Lance",
+            "strength": 1
+        }, {
+            "nom": "Plastron",
+            "strength": 0
+        }]
+    },
+    "arme": {
+        "nom": "Lance",
+        "strength": 1
+    },
+    "armure": {
+        "nom": "Plastron",
+        "strength": 0
+    }
+
+}

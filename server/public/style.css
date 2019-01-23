@@ -1,0 +1,91 @@
+#history {
+    background-color: bisque;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    height: 20em;
+    overflow-y: scroll;
+    border-radius: 1.5em;
+    border-color: #29323c;
+    border-style: ridge;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: none;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(20, 50, 0, 0.2);
+    border-radius: 13em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(40, 60, 0);
+}
+
+table {
+    margin: 0 auto;
+    border: 1px;
+    border-style: groove;
+}
+
+* {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background-color: #e8e2db;
+}
+
+input{
+    width: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 5px; 
+   
+
+    background-color: bisque;
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+
+button {
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+
+    border-radius: 50px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+
+}
+
+button:hover {
+    background-position: 100% 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}

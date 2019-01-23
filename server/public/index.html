@@ -1,0 +1,41 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<meta charset="UTF-8">
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5IjK57LyT9IAiZoVvmI8SN8FpXTDp59Q",
+    authDomain: "callme-86703.firebaseapp.com",
+    databaseURL: "https://callme-86703.firebaseio.com",
+    projectId: "callme-86703",
+    storageBucket: "callme-86703.appspot.com",
+    messagingSenderId: "522793033283"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="../javascript/Game.js"></script>
+
+<body id='body'>
+  
+  <br>
+  <div id="direction">
+    <button value="north" onclick="moveTo(this)">Go to North</button>
+  </div>
+  <br>
+  <span id="directionChoosed"></span>
+  <table id="tableValuePlayer"></table>
+  <br>
+  <b>Inventory</b>
+  <table id="tableValueInventory"></table>
+  <br>
+  <b>History</b>
+  <div id="history"></div>
+  <div id="load">
+    <button onclick="load()">Load</button>
+  </div>
+  <style id="styleBtn"></style>
+</body>
+
+</html>
