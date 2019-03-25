@@ -1,0 +1,57 @@
+<html id="backgroundElement">
+    <head>
+        <title>Call Me Cast</title>
+        <link rel="stylesheet" type="text/css" href="styleAccueil.css">
+        <script src="/__/firebase/5.8.1/firebase-app.js"></script>
+        <script src="/__/firebase/5.8.1/firebase-database.js"></script>
+        <script src="/__/firebase/5.8.1/firebase-auth.js"></script>
+        <script src="/__/firebase/5.8.1/firebase-messaging.js"></script>
+        <script src="/__/firebase/5.8.1/firebase-functions.js"></script>
+    </head>
+    <body>
+        <header class="miniHeader">
+            <h2 id="miniPageTitle">cALL Me cAsT</h2>
+        </header>
+        <div id="rightTopCornerMenu">
+            <a href="connexion.html">
+                <img src="connexion.png" />
+                Log In
+            </a>
+            <a href="newcall.html">
+                <img src="call.png" alt="Create New Server" href="newcall.html" />
+                New Call
+            </a>
+        </div>
+        <div id="bodyElementCall">
+            <div id="videos">
+                <div>
+                    <video id="receiver-video" poster="animatedRings.gif"></video>
+                </div>
+                <div>
+                    <video id="emitter-video" poster="animatedRings.gif"></video>
+                </div>
+            </div>
+            <input id="btnReady" type="button" value="Ready !" style="display:none;" />
+        </div>
+        <footer>
+    
+        </footer>
+    </body>
+    <script src="simplepeer.js"></script>
+    <script src="appCall.js"></script>
+    <script>
+        launchCall();
+        window.unload = function() {console.log("test");};
+    </script>
+    <script src="three.r92.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#backgroundElement",
+      color: 0xaf0000,
+      points: 16.00,
+      maxDistance: 30.00,
+      spacing: 17.00
+    })
+    </script>
+</html>
